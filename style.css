@@ -1,0 +1,248 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url(<ссылка на шрифт>) format("woff2"),
+    url(<ссылка на шрифт>) format("ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,:after,:before {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    overflow-y: scroll;
+    font-family: "Gilroy", sans-serif !important;
+    font-size: 1rem;
+    transition: all 1s;
+    color: #172c5f;
+    font-weight: 300;
+}
+
+
+[tabindex="-1"]:focus {
+    outline: 0!important
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+input {
+    min-width: 0;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: .5rem
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+
+.contact-form {
+    background-color: #f5f5f6;
+    padding: 20px 20px;
+}
+
+.contact-form__head
+{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.contact-form__head-title {
+    font-size: 2rem;
+    color: #172c5f;
+    margin-right: 40px;
+}
+
+.contact-form__head-text {
+    font-size: 1rem;
+    color: #172c5f;
+    line-height: 1.7;
+    padding-top: 15px;
+}
+
+.contact-form__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input, .input__label {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form__input {
+    height: auto;
+    margin-right: 4.16667vw;
+    margin-bottom: 20px;
+}
+
+.contact-form__input input,
+.contact-form__form-message textarea{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    color: #172c5f;
+    border: 1px solid transparent;
+    padding: 0 30px;
+    transition: border .3s;
+    outline: none;
+}
+
+.input__label {
+    margin: 0;
+}
+
+
+.input__label-text {
+    font-size: 0.9rem;
+    color: #172c5f;
+    margin-bottom: 10px;
+}
+
+.contact-form__input input {
+    height: 60px;
+}
+
+.contact-form__form-message {
+    position: relative;
+    height: 100%;
+}
+
+.contact-form__form-message textarea {
+    height: 100%;
+    min-height: 200px;
+    resize: none;
+    padding: 24px 30px;
+    margin: 0;
+}
+
+.contact-form__bottom {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.contact-form__bottom-policy {
+    width: 50.00004vw;
+    font-size: 0.9rem;
+    color: #172c5f;
+    line-height: 1.7;
+}
+
+button {
+    border-radius: 0;
+}
+
+.contact-form__bottom-button {
+    width: 12.50001vw;
+    min-width: 200px;
+    height: 60px;
+    font-size: 0.9rem;
+    color: #172c5f;
+    margin-left: 4.16667vw;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    transition: color .3s;
+}
+
+.form-button, .form-button:focus {
+    outline: none;
+}
+
+
+.contact-form__form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4.16667vw;
+    row-gap: 20px;
+}
+.contact-form__input {
+    width: calc(50% - 2.08333vw);
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+
+@media  (max-width: 1199.98px) {
+    .contact-form__head {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 1199.98px) {
+    .contact-form__head-title {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 1199.98px) {
+    .contact-form__input {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .contact-form__form-inputs, .contact-form__form-message {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 1199.98px) {
+    .contact-form__bottom {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .contact-form__bottom-button button {
+        padding-bottom: 0;
+    }
+
+}
+@media (max-width: 1199.98px) {
+    .contact-form__bottom-policy {
+        width: 58.33338vw;
+    }
+}
