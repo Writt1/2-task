@@ -30,7 +30,7 @@
                 <?php foreach ($arResult["QUESTIONS"] as $FIELD_SID => $arQuestion): ?>
                     <?php if ($arQuestion['STRUCTURE'][0]['FIELD_TYPE'] == 'hidden'): ?>
                         <?=$arQuestion["HTML_CODE"]?>
-                    <?php elseif ($arQuestion['STRUCTURE'][0]['FIELD_TYPE'] == 'textarea' || $FIELD_SID == 'message'): ?>
+                    <?php elseif ($arQuestion['STRUCTURE'][0]['FIELD_TYPE'] == 'textarea'): ?>
                     <?php else: ?>
                         <div class="contact-form__input">
                             <label class="input__label" for="<?=$FIELD_SID?>">
@@ -51,12 +51,12 @@
 
             <?php
             foreach ($arResult["QUESTIONS"] as $FIELD_SID => $arQuestion):
-                if ($arQuestion['STRUCTURE'][0]['FIELD_TYPE'] == 'textarea' || $FIELD_SID == 'message'): ?>
+                if ($arQuestion['STRUCTURE'][0]['FIELD_TYPE'] == 'textarea'): ?>
                     <div class="contact-form__form-message">
                         <div class="input">
                             <label class="input__label" for="<?=$FIELD_SID?>">
                                 <div class="input__label-text">
-                                    <?=$arQuestion["CAPTION"]?>                                    
+                                    <?=$arQuestion["CAPTION"]?>
                                     <?php if ($arQuestion["REQUIRED"] == "Y"): ?>
                                         <?=$arResult["REQUIRED_SIGN"];?>
                                     <?php endif; ?>
