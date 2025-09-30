@@ -71,6 +71,7 @@ button, input, optgroup, select, textarea {
 .contact-form {
     background-color: #f5f5f6;
     padding: 20px 20px;
+    margin-bottom: 50px;
 }
 
 .contact-form__head
